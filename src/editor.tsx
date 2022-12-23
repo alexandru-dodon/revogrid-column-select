@@ -26,7 +26,8 @@ export class SelectColumnEditor implements Edition.EditorBase {
         if (val !== this.editCell?.val) {
             filter = this.editCell?.val;
         }
-        return <revo-dropdown 
+        return <div>
+            <revo-dropdown 
             source={this.column?.source}
             dataId={this.column?.valueKey}
             dataLabel={this.column?.labelKey}
@@ -44,6 +45,7 @@ export class SelectColumnEditor implements Edition.EditorBase {
                 } else {
                     this.saveCallback(detail.val, preventFocus);
                 }
-            }}/>;
+            }}/>
+        </div>;
     }
 }
