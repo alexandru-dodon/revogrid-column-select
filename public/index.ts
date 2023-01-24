@@ -82,6 +82,9 @@ function generateSampleData() {
       source: [
         { id: "742", value: "Medium" },
         { id: "743", value: "Hard" },
+      ],
+      appendSource: [
+        { id: "new", value: "Create Value" }
       ]
     }
   ]
