@@ -29,6 +29,7 @@ export class SelectColumnEditor implements Edition.EditorBase {
         return <div>
             <revo-dropdown 
             source={this.column?.source}
+            appendSource={this.column?.appendSource}
             dataId={this.column?.valueKey}
             dataLabel={this.column?.labelKey}
             autocomplete={true}
