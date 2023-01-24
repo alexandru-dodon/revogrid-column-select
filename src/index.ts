@@ -21,7 +21,6 @@ export default class SelectColumnType {
     cellTemplate = SelectColumnRenderer;
 
     private loadCustomComponent() {
-        console.log(loader)
         if (loader?.defineCustomElements) {
             loader?.defineCustomElements();
         }
