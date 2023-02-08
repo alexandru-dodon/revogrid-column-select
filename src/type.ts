@@ -1,5 +1,6 @@
 import { RevoGrid } from '@revolist/revogrid/dist/types/interfaces';
 export interface SelectConfig extends RevoGrid.ColumnRegular {
+    multiple?: boolean;
     source?: (string|{[label: string]: any})[];
     appendSource?: (string|{[label: string]: any})[];
     sourceLookup?: Record<string, any>;

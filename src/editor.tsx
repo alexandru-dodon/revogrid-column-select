@@ -32,6 +32,7 @@ export class SelectColumnEditor implements Edition.EditorBase {
             appendSource={this.column?.appendSource}
             dataId={this.column?.valueKey}
             dataLabel={this.column?.labelKey}
+            multiple={this.column?.multiple}
             autocomplete={true}
             autoFocus={true}
             max-height='300'
